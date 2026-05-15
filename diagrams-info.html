@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ОПРЕДЕЛЕНИЯ | OSINT Portal</title>
+    <link rel="stylesheet" href="cybersec.css">
+    <style>
+        .highlight {
+            border-left: 5px solid #FF5733 !important;
+            background: #fff8f0 !important;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px rgba(255, 87, 51, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container flex-header">
+            <div class="logo">CYBER<span>OSINT</span> / INFO</div>
+            <nav class="nav-menu">
+                <a href="cybersec.html#arsenal">АРСЕНАЛ</a>
+                <a href="cybersec.html#diagrams">СХЕМЫ</a>
+                <a href="cybersec.html#knowledge">БАЗА ЗНАНИЙ</a>
+                <a href="cybersec.html#soceng">SOCIAL ENGINEERING</a>
+                <a href="cybersec.html#terminal">КОНСОЛЬ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" style="padding: 50px 20px;">
+        <a href="cybersec.html#diagrams" class="back-link" style="color: var(--primary); text-decoration: none; font-weight: bold; border-bottom: 1px solid var(--primary);">← НАЗАД К СХЕМАМ</a>
+
+        <h1 style="margin: 40px 0; color: var(--primary); font-family: var(--font-mono);">ОПРЕДЕЛЕНИЯ ТЕРМИНОВ</h1>
+
+        <!-- ИНТЕЛЛЕКТУАЛЬНЫЕ ЦИКЛЫ -->
+        <section id="humint" class="tool-card" style="margin-bottom: 25px;">
+            <h3>HUMINT (Human Intelligence)</h3>
+            <p>Метод сбора информации через межличностное общение, агентурную работу и психологическое воздействие.</p>
+        </section>
+
+        <section id="sigint" class="tool-card" style="margin-bottom: 25px;">
+            <h3>SIGINT (Signals Intelligence)</h3>
+            <p>Разведка на основе перехвата радиосигналов, сообщений и данных из каналов связи.</p>
+        </section>
+
+        <section id="geoint" class="tool-card" style="margin-bottom: 25px;">
+            <h3>GEOINT (Geospatial Intelligence)</h3>
+            <p>Сбор и анализ данных о деятельности человека на Земле на основе визуализации географических объектов.</p>
+        </section>
+
+        <section id="imint" class="tool-card" style="margin-bottom: 25px;">
+            <h3>IMINT (Imagery Intelligence)</h3>
+            <p>Получение информации путем анализа изображений, полученных с помощью спутников или БПЛА.</p>
+        </section>
+
+        <section id="techint" class="tool-card" style="margin-bottom: 25px;">
+            <h3>TECHINT (Technical Intelligence)</h3>
+            <p>Анализ технических характеристик и возможностей оборудования или программного обеспечения.</p>
+        </section>
+
+        <section id="masint" class="tool-card" style="margin-bottom: 25px;">
+            <h3>MASINT</h3>
+            <p>Разведка, основанная на измерении физических характеристик и сигнатур объектов.</p>
+        </section>
+
+        <section id="cultint" class="tool-card" style="margin-bottom: 25px;">
+            <h3>CULTINT</h3>
+            <p>Анализ культурных кодов, традиций и социальных норм для понимания поведения субъектов.</p>
+        </section>
+
+        <section id="markint" class="tool-card" style="margin-bottom: 25px;">
+            <h3>MARKINT</h3>
+            <p>Рыночная разведка: отслеживание коммерческих данных, конкурентов и финансовых потоков.</p>
+        </section>
+
+        <!-- ИСТОЧНИКИ ДАННЫХ -->
+        <section id="media" class="tool-card" style="margin-bottom: 25px;">
+            <h3>MEDIA</h3>
+            <p>Публичные новостные каналы, ТВ, газеты и информационные агентства.</p>
+        </section>
+
+        <section id="internet" class="tool-card" style="margin-bottom: 25px;">
+            <h3>INTERNET</h3>
+            <p>Открытый веб, форумы, социальные сети и неиндексируемые ресурсы (Deep/Dark Web).</p>
+        </section>
+
+        <section id="reports" class="tool-card" style="margin-bottom: 25px;">
+            <h3>REPORTS</h3>
+            <p>Аналитические отчеты, государственные реестры и официальные документы.</p>
+        </section>
+
+        <section id="articles" class="tool-card" style="margin-bottom: 25px;">
+            <h3>ARTICLES</h3>
+            <p>Научные исследования, специализированные статьи и публикации экспертов.</p>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 OSINT Knowledge Base.</p>
+        </div>
+    </footer>
+
+    <script>
+        // --- ПОДСВЕТКА ЭЛЕМЕНТА ПРИ ПЕРЕХОДЕ ПО ССЫЛКЕ ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const targetId = window.location.hash.substring(1);
+            if (targetId) {
+                const element = document.getElementById(targetId);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    element.classList.add('highlight');
+                    setTimeout(() => {
+                        element.classList.remove('highlight');
+                    }, 3000);
+                }
+            }
+        });
+    </script>
+</body>
+</html>

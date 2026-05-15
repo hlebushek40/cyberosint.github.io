@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSINT & CyberSecurity Portal</title>
+    <link rel="stylesheet" href="cybersec.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ШАПКА -->
+    <header class="main-header">
+        <div class="container flex-header">
+            <div class="logo">CYBER<span>OSINT</span></div>
+            <nav class="nav-menu">
+                <a href="#arsenal">Арсенал</a>
+                <a href="#diagrams">Схемы</a>
+                <a href="#knowledge">База знаний</a>
+                <a href="#soceng">Social Engineering</a>
+                <a href="#terminal">Консоль</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO БЛОК -->
+        <section class="hero-block">
+            <div class="container">
+                <h1 id="heroTitle" class="hero-title" data-text="OSINT & Privacy Hub"></h1>
+                <p class="hero-subtitle">Комплексная разведка, анонимность и систематизация данных. Полный цикл работы с информацией.</p>
+                <div class="hero-features">
+                    <div class="feat-tag">KALI LINUX</div>
+                    <div class="feat-tag">MULLVAD</div>
+                    <div class="feat-tag">GOOGLE DORKS</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ДИАГРАММЫ -->
+        <section id="diagrams" class="diagrams-section">
+            <div class="container">
+                <h2 class="section-title">Методологические схемы</h2>
+                <div class="diagram-grid">
+
+                    <!-- ИНТЕЛЛЕКТУАЛЬНЫЕ ЦИКЛЫ -->
+                    <div class="diagram-item">
+                        <h3>Интеллектуальные циклы (INT)</h3>
+                        <div class="svg-container">
+                            <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="200" cy="200" r="80" fill="#708090" opacity="0.8" />
+                                <text x="200" y="205" font-family="JetBrains Mono" font-size="22" text-anchor="middle" fill="white" font-weight="bold">OSINT</text>
+
+                                <g fill="none" stroke="#708090" stroke-width="2">
+                                    <circle cx="200" cy="50" r="35" fill="white" />
+                                    <circle cx="306" cy="94" r="35" fill="white" />
+                                    <circle cx="350" cy="200" r="35" fill="white" />
+                                    <circle cx="306" cy="306" r="35" fill="white" />
+                                    <circle cx="200" cy="350" r="35" fill="white" />
+                                    <circle cx="94" cy="306" r="35" fill="white" />
+                                    <circle cx="50" cy="200" r="35" fill="white" />
+                                    <circle cx="94" cy="94" r="35" fill="white" />
+                                </g>
+
+                                <g font-family="Arial" font-size="10" text-anchor="middle" font-weight="bold" class="svg-links">
+                                    <a href="diagrams-info.html#humint"><text x="200" y="55">HUMINT</text></a>
+                                    <a href="diagrams-info.html#cultint"><text x="306" y="99">CULTINT</text></a>
+                                    <a href="diagrams-info.html#geoint"><text x="350" y="205">GEOINT</text></a>
+                                    <a href="diagrams-info.html#markint"><text x="306" y="311">MARKINT</text></a>
+                                    <a href="diagrams-info.html#imint"><text x="200" y="355">IMINT</text></a>
+                                    <a href="diagrams-info.html#sigint"><text x="94" y="311">SIGINT</text></a>
+                                    <a href="diagrams-info.html#techint"><text x="50" y="205">TECHINT</text></a>
+                                    <a href="diagrams-info.html#masint"><text x="94" y="99">MASINT</text></a>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- ИСТОЧНИКИ ДАННЫХ -->
+                    <div class="diagram-item">
+                        <h3>Источники данных</h3>
+                        <div class="svg-container">
+                            <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="200" cy="200" r="160" fill="none" stroke="#708090" stroke-width="80" opacity="0.2" />
+                                <circle cx="200" cy="200" r="100" fill="none" stroke="#708090" stroke-width="40" opacity="0.4" />
+                                <line x1="200" y1="40" x2="200" y2="360" stroke="white" stroke-width="2" />
+                                <line x1="40" y1="200" x2="360" y2="200" stroke="white" stroke-width="2" />
+                                <circle cx="200" cy="200" r="50" fill="white" stroke="#708090" stroke-width="3" />
+                                <text x="200" y="207" font-family="JetBrains Mono" font-size="16" text-anchor="middle" fill="#708090" font-weight="bold">OSINT</text>
+
+                                <g font-family="Arial" font-size="12" font-weight="bold" class="svg-links">
+                                    <a href="diagrams-info.html#media"><text x="200" y="115" text-anchor="middle">MEDIA</text></a>
+                                    <a href="diagrams-info.html#internet"><text x="285" y="205" text-anchor="middle">INTERNET</text></a>
+                                    <a href="diagrams-info.html#reports"><text x="200" y="300" text-anchor="middle">REPORTS</text></a>
+                                    <a href="diagrams-info.html#articles"><text x="115" y="205" text-anchor="middle">ARTICLES</text></a>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- АРСЕНАЛ -->
+        <section id="arsenal" class="arsenal-section">
+            <div class="container">
+                <h2 class="section-title">Технический арсенал</h2>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <div class="tool-icon">KL</div>
+                        <h3>Kali Linux</h3>
+                        <p>Платформа для тестирования на проникновение. Инструменты: Nmap, Metasploit, Burp Suite.</p>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">MT</div>
+                        <h3>Maltego</h3>
+                        <p>Визуализация связей. Построение графов отношений между доменами, IP и людьми.</p>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">MV</div>
+                        <h3>Mullvad VPN</h3>
+                        <p>Максимальная приватность: отсутствие логов, использование WireGuard и оплата наличными/криптой.</p>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">GD</div>
+                        <h3>Google Dorking</h3>
+                        <p>Поиск скрытых данных через расширенные операторы: filetype:pdf, site:gov, intitle:index of.</p>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">SH</div>
+                        <h3>Shodan</h3>
+                        <p>Поисковик по интернету вещей (IoT). Сканирование портов и уязвимостей серверов.</p>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">SF</div>
+                        <h3>Sherlock & SpiderFoot</h3>
+                        <p>Автоматизированный поиск цифрового следа по социальным сетям и открытым реестрам.</p>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-icon">OB</div>
+                        <h3>Obsidian / Miro</h3>
+                        <p>Систематизация расследований через графы знаний и майнд-карты связей.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- БАЗА ЗНАНИЙ -->
+        <section id="knowledge" class="knowledge-section">
+            <div class="container">
+                <div class="knowledge-content">
+                    <h2 class="section-title">Систематизация в Obsidian</h2>
+                    <div class="knowledge-text">
+                        <p>Работа с большим объемом данных в OSINT требует дисциплины. Мы используем <strong>Obsidian</strong> для создания «второго мозга».</p>
+                        <p><strong>Miro</strong> применяется для визуализации цепочек владения активами и таймлайнов событий.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- СОЦИАЛЬНАЯ ИНЖЕНЕРИЯ -->
+        <section id="soceng" class="soceng-section">
+            <div class="container">
+                <div class="soceng-wrapper">
+                    <h2 class="section-title white">Социальная инженерия</h2>
+                    <p>Психологическое манипулирование с целью получения доступа к конфиденциальной информации. В мире кибербезопасности человек — самое слабое звено.</p>
+                    <ul class="soc-list">
+                        <li><strong>Phishing:</strong> Создание поддельных ресурсов для кражи учетных данных.</li>
+                        <li><strong>Pretexting:</strong> Использование заранее подготовленного сценария для входа в доверие.</li>
+                        <li><strong>Baiting:</strong> Искушение жертвы (например, флешка с «сюрпризом»).</li>
+                        <li><strong>Tailgating:</strong> Проникновение в охраняемые зоны вслед за авторизованным сотрудником.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ТЕРМИНАЛ -->
+        <section id="terminal" class="terminal-section">
+            <div class="container">
+                <div class="terminal-box">
+                    <div class="terminal-top">
+                        <span class="t-dot"></span>
+                        <span class="t-dot"></span>
+                        <span class="t-dot"></span>
+                        <span class="t-user">guest@cyber_portal: ~</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p class="t-line"><span class="t-prompt">$</span> shodan host 8.8.8.8</p>
+                        <p class="t-out">[*] Analyzing Google DNS...</p>
+                        <p class="t-line"><span class="t-prompt">$</span> cat obsidian_notes.md | grep "target_info"</p>
+                        <p class="t-out">[OK] Entry found in Knowledge Base.</p>
+                        <p class="t-cursor">_</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 OSINT Knowledge Base.</p>
+        </div>
+    </footer>
+
+
+    <button id="scrollToTopBtn" class="scroll-to-top-btn" title="Наверх">&#9650;</button>
+
+
+    <script src="cybersec.js" defer></script>
+</body>
+</html>
